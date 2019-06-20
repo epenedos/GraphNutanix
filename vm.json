@@ -1,0 +1,3964 @@
+{
+  "api_version": "3.1",
+  "metadata": {
+    "total_matches": 37,
+    "kind": "vm",
+    "length": 20,
+    "offset": 0
+  },
+  "entities": [
+    {
+      "status": {
+        "state": "COMPLETE",
+        "cluster_reference": {
+          "kind": "cluster",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff",
+          "name": "DEMO-AHV"
+        },
+        "description": "NutanixPrismCentral",
+        "resources": {
+          "num_threads_per_core": 1,
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 8,
+          "gpu_list": [],
+          "protection_type": "UNPROTECTED",
+          "memory_size_mib": 43008,
+          "hardware_clock_timezone": "UTC",
+          "power_state_mechanism": {
+            "guest_transition_config": {}
+          },
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "018d3dc6-5334-4753-83b7-0ac210290d4c",
+              "disk_size_bytes": 53687296,
+              "disk_size_mib": 52
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "672be5b7-7104-4abb-bcaa-21a06f23f6bf",
+              "disk_size_bytes": 374784,
+              "disk_size_mib": 1
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 6,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "297859cc-7310-4418-92b0-2762ee0166e5",
+              "disk_size_bytes": 10737418240,
+              "disk_size_mib": 10240
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 4,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "4d5e92f5-8274-4ab3-9373-67c7fe6afaab",
+              "disk_size_bytes": 383478923264,
+              "disk_size_mib": 365714
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 3,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "2f172070-4de8-435e-abb5-37fc3f2fdb1b",
+              "disk_size_bytes": 2684354560000,
+              "disk_size_mib": 2560000
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 5,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "a0976d20-c947-4fa7-bebd-c6008c7b148e",
+              "disk_size_bytes": 32212254720,
+              "disk_size_mib": 30720
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 1,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "60b71a5c-c78c-46fe-ac7a-f1e8f51fcbb0",
+              "disk_size_bytes": 75161927680,
+              "disk_size_mib": 71680
+            }
+          ],
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "7b0312b2-d20c-4f68-a07b-ae59d898c95e",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.50",
+                  "type": "ASSIGNED"
+                },
+                {
+                  "ip": "10.42.220.50",
+                  "type": "LEARNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:26:63:d6",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            },
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "a554abfa-47b4-48be-bbe0-0ae3c4128d57",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.19",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:41:c0:f9",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "host_reference": {
+            "kind": "host",
+            "uuid": "7ba6f41d-0ec1-41df-a194-4699c3309a58",
+            "name": "10.42.195.26"
+          },
+          "serial_port_list": [],
+          "hypervisor_type": "AHV",
+          "power_state": "ON"
+        },
+        "name": "Demo PC"
+      },
+      "spec": {
+        "cluster_reference": {
+          "kind": "cluster",
+          "name": "DEMO-AHV",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff"
+        },
+        "description": "NutanixPrismCentral",
+        "resources": {
+          "num_threads_per_core": 1,
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "serial_port_list": [],
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "7b0312b2-d20c-4f68-a07b-ae59d898c95e",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.50",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:26:63:d6",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            },
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "a554abfa-47b4-48be-bbe0-0ae3c4128d57",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.19",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:41:c0:f9",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 8,
+          "gpu_list": [],
+          "memory_size_mib": 43008,
+          "power_state": "ON",
+          "hardware_clock_timezone": "UTC",
+          "power_state_mechanism": {},
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "018d3dc6-5334-4753-83b7-0ac210290d4c",
+              "disk_size_bytes": 53687296,
+              "disk_size_mib": 52
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "672be5b7-7104-4abb-bcaa-21a06f23f6bf",
+              "disk_size_bytes": 374784,
+              "disk_size_mib": 1
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 6,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "297859cc-7310-4418-92b0-2762ee0166e5",
+              "disk_size_bytes": 10737418240,
+              "disk_size_mib": 10240
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 4,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "4d5e92f5-8274-4ab3-9373-67c7fe6afaab",
+              "disk_size_bytes": 383478923264,
+              "disk_size_mib": 365714
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 3,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "2f172070-4de8-435e-abb5-37fc3f2fdb1b",
+              "disk_size_bytes": 2684354560000,
+              "disk_size_mib": 2560000
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 5,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "a0976d20-c947-4fa7-bebd-c6008c7b148e",
+              "disk_size_bytes": 32212254720,
+              "disk_size_mib": 30720
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 1,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "60b71a5c-c78c-46fe-ac7a-f1e8f51fcbb0",
+              "disk_size_bytes": 75161927680,
+              "disk_size_mib": 71680
+            }
+          ]
+        },
+        "name": "Demo PC"
+      },
+      "metadata": {
+        "last_update_time": "2019-06-15T18:55:39Z",
+        "kind": "vm",
+        "uuid": "f7c1988d-4fdd-4ca0-8884-3c3ed88d68a5",
+        "project_reference": {
+          "kind": "project",
+          "name": "default",
+          "uuid": "72acfcc2-f524-41f0-adb0-c142fa41defc"
+        },
+        "spec_version": 3,
+        "creation_time": "2019-02-09T00:43:32Z",
+        "owner_reference": {
+          "kind": "user",
+          "uuid": "00000000-0000-0000-0000-000000000000",
+          "name": "admin"
+        },
+        "categories": {}
+      }
+    },
+    {
+      "status": {
+        "state": "COMPLETE",
+        "name": "Demo DC",
+        "resources": {
+          "num_threads_per_core": 1,
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 2,
+          "gpu_list": [],
+          "protection_type": "UNPROTECTED",
+          "memory_size_mib": 2048,
+          "hardware_clock_timezone": "America/New_York",
+          "power_state_mechanism": {
+            "guest_transition_config": {}
+          },
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 1,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "bbb0d63b-9991-420c-b281-3b4ce5c21b60",
+              "disk_size_bytes": 134217728000,
+              "disk_size_mib": 128000
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 2,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "9d568fd0-2a53-424c-bf03-59719a4a2e53",
+              "disk_size_bytes": 134217728000,
+              "disk_size_mib": 128000
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "312f2b60-15af-4c20-9d30-a7b5f65e22e2",
+              "disk_size_bytes": 2147483648,
+              "disk_size_mib": 2048
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "cb1924bd-d083-434d-a27e-931340459613"
+            }
+          ],
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "bd5a4189-4842-4720-bacd-c92e214f16d0",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.51",
+                  "type": "ASSIGNED"
+                },
+                {
+                  "ip": "10.42.220.51",
+                  "type": "LEARNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:07:c6:d7",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "host_reference": {
+            "kind": "host",
+            "uuid": "c064173c-8fff-4d47-9b98-351a2b7de108",
+            "name": "10.42.195.25"
+          },
+          "serial_port_list": [],
+          "guest_tools": {
+            "nutanix_guest_tools": {
+              "available_version": "1.6",
+              "ngt_state": "UNINSTALLED",
+              "iso_mount_state": "UNMOUNTED",
+              "state": "ENABLED",
+              "enabled_capability_list": [
+                "VSS_SNAPSHOT"
+              ],
+              "is_reachable": false
+            }
+          },
+          "hypervisor_type": "AHV",
+          "power_state": "ON"
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff",
+          "name": "DEMO-AHV"
+        }
+      },
+      "spec": {
+        "name": "Demo DC",
+        "resources": {
+          "num_threads_per_core": 1,
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "serial_port_list": [],
+          "guest_tools": {
+            "nutanix_guest_tools": {
+              "iso_mount_state": "UNMOUNTED",
+              "enabled_capability_list": [
+                "VSS_SNAPSHOT"
+              ],
+              "state": "ENABLED",
+              "ngt_state": "UNINSTALLED"
+            }
+          },
+          "num_vcpus_per_socket": 1,
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "bd5a4189-4842-4720-bacd-c92e214f16d0",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.51",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:07:c6:d7",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "num_sockets": 2,
+          "gpu_list": [],
+          "memory_size_mib": 2048,
+          "power_state": "ON",
+          "hardware_clock_timezone": "America/New_York",
+          "power_state_mechanism": {},
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 1,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "bbb0d63b-9991-420c-b281-3b4ce5c21b60",
+              "disk_size_bytes": 134217728000,
+              "disk_size_mib": 128000
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 2,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "9d568fd0-2a53-424c-bf03-59719a4a2e53",
+              "disk_size_bytes": 134217728000,
+              "disk_size_mib": 128000
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "312f2b60-15af-4c20-9d30-a7b5f65e22e2",
+              "disk_size_bytes": 2147483648,
+              "disk_size_mib": 2048
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "cb1924bd-d083-434d-a27e-931340459613"
+            }
+          ]
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "name": "DEMO-AHV",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff"
+        }
+      },
+      "metadata": {
+        "last_update_time": "2019-05-30T22:20:08Z",
+        "kind": "vm",
+        "uuid": "dd13e099-f667-4667-964a-7905f14dc101",
+        "project_reference": {
+          "kind": "project",
+          "name": "default",
+          "uuid": "72acfcc2-f524-41f0-adb0-c142fa41defc"
+        },
+        "spec_version": 14,
+        "creation_time": "2019-02-09T20:52:32Z",
+        "owner_reference": {
+          "kind": "user",
+          "uuid": "00000000-0000-0000-0000-000000000000",
+          "name": "admin"
+        },
+        "categories": {}
+      }
+    },
+    {
+      "status": {
+        "state": "COMPLETE",
+        "name": "sql_01_restoresql_01 ",
+        "resources": {
+          "num_threads_per_core": 1,
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 4,
+          "gpu_list": [],
+          "protection_type": "UNPROTECTED",
+          "memory_size_mib": 8192,
+          "boot_config": {
+            "boot_device": {
+              "disk_address": {
+                "device_index": 0,
+                "adapter_type": "SCSI"
+              }
+            }
+          },
+          "hardware_clock_timezone": "Asia/Manila",
+          "power_state_mechanism": {
+            "guest_transition_config": {}
+          },
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "9c3d4779-302e-491e-a8c5-9828d4c892a1",
+              "disk_size_bytes": 214748364800,
+              "disk_size_mib": 204800
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "1e651cf3-ccab-43a1-ba30-a92ce4fa8e7b"
+            }
+          ],
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "eb6bbbb7-56c5-4510-8d18-55b6eb30f6dc",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.106",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:58:ba:7f",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "serial_port_list": [],
+          "hypervisor_type": "AHV",
+          "power_state": "OFF"
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff",
+          "name": "DEMO-AHV"
+        }
+      },
+      "spec": {
+        "name": "sql_01_restoresql_01 ",
+        "resources": {
+          "num_threads_per_core": 1,
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "serial_port_list": [],
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "eb6bbbb7-56c5-4510-8d18-55b6eb30f6dc",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.106",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:58:ba:7f",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 4,
+          "gpu_list": [],
+          "memory_size_mib": 8192,
+          "power_state": "OFF",
+          "hardware_clock_timezone": "Asia/Manila",
+          "power_state_mechanism": {},
+          "vga_console_enabled": true,
+          "boot_config": {
+            "boot_device": {
+              "disk_address": {
+                "device_index": 0,
+                "adapter_type": "SCSI"
+              }
+            }
+          },
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "9c3d4779-302e-491e-a8c5-9828d4c892a1",
+              "disk_size_bytes": 214748364800,
+              "disk_size_mib": 204800
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "1e651cf3-ccab-43a1-ba30-a92ce4fa8e7b"
+            }
+          ]
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "name": "DEMO-AHV",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff"
+        }
+      },
+      "metadata": {
+        "last_update_time": "2019-06-15T18:55:39Z",
+        "kind": "vm",
+        "uuid": "8f8f40eb-cbbc-4583-9c80-5ba9686f4ff5",
+        "project_reference": {
+          "kind": "project",
+          "name": "default",
+          "uuid": "72acfcc2-f524-41f0-adb0-c142fa41defc"
+        },
+        "spec_version": 0,
+        "creation_time": "2019-06-03T03:51:38Z",
+        "owner_reference": {
+          "kind": "user",
+          "uuid": "00000000-0000-0000-0000-000000000000",
+          "name": "admin"
+        },
+        "categories": {}
+      }
+    },
+    {
+      "status": {
+        "description": "test",
+        "state": "COMPLETE",
+        "execution_context": {
+          "task_uuids": [
+            "408c8774-94c9-4084-b802-67d37e4cd9df"
+          ]
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff",
+          "name": "DEMO-AHV"
+        },
+        "resources": {
+          "num_threads_per_core": 1,
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 2,
+          "gpu_list": [],
+          "protection_type": "UNPROTECTED",
+          "memory_size_mib": 4096,
+          "hardware_clock_timezone": "America/Indianapolis",
+          "power_state_mechanism": {
+            "guest_transition_config": {
+              "should_fail_on_script_failure": false,
+              "enable_script_exec": false
+            },
+            "mechanism": "HARD"
+          },
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "data_source_reference": {
+                "kind": "image",
+                "uuid": "e35dd344-41dd-4c67-90e4-58136ea202db"
+              },
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "cb50728a-ee61-459a-b9a4-b2945f200511",
+              "disk_size_bytes": 42949672960,
+              "disk_size_mib": 40960
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "c6fd3fe2-a914-4b4b-962e-3658518021e8"
+            }
+          ],
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "nic_list": [
+            {
+              "dns_ip_addresses_list": [
+                "10.42.196.10",
+                "10.42.194.10"
+              ],
+              "nic_type": "NORMAL_NIC",
+              "uuid": "2784ea45-1635-4b24-a422-0f790e382e2f",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.111",
+                  "type": "ASSIGNED",
+                  "prefix_length": 24,
+                  "gateway_address_list": [
+                    "10.42.220.1"
+                  ],
+                  "ip_type": "DHCP"
+                }
+              ],
+              "dhcp_server_ip": "10.42.220.254",
+              "mac_address": "50:6b:8d:8d:60:3d",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "serial_port_list": [],
+          "guest_tools": {
+            "nutanix_guest_tools": {
+              "available_version": "1.6",
+              "ngt_state": "INSTALLED",
+              "iso_mount_state": "UNMOUNTED",
+              "state": "ENABLED",
+              "version": "1.6",
+              "enabled_capability_list": [
+                "SELF_SERVICE_RESTORE",
+                "VSS_SNAPSHOT"
+              ],
+              "guest_os_version": "windows:64:Windows7Enterprise",
+              "is_reachable": false
+            }
+          },
+          "hypervisor_type": "AHV",
+          "power_state": "OFF"
+        },
+        "name": "demo_sw"
+      },
+      "spec": {
+        "cluster_reference": {
+          "kind": "cluster",
+          "name": "DEMO-AHV",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff"
+        },
+        "description": "test",
+        "resources": {
+          "num_threads_per_core": 1,
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "serial_port_list": [],
+          "guest_tools": {
+            "nutanix_guest_tools": {
+              "iso_mount_state": "UNMOUNTED",
+              "enabled_capability_list": [
+                "SELF_SERVICE_RESTORE",
+                "VSS_SNAPSHOT"
+              ],
+              "state": "ENABLED",
+              "version": "1.6",
+              "ngt_state": "INSTALLED"
+            }
+          },
+          "num_vcpus_per_socket": 1,
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "2784ea45-1635-4b24-a422-0f790e382e2f",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.111",
+                  "type": "ASSIGNED",
+                  "prefix_length": 24,
+                  "gateway_address_list": [
+                    "10.42.220.1"
+                  ],
+                  "ip_type": "DHCP"
+                }
+              ],
+              "mac_address": "50:6b:8d:8d:60:3d",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "num_sockets": 2,
+          "gpu_list": [],
+          "memory_size_mib": 4096,
+          "power_state": "OFF",
+          "hardware_clock_timezone": "America/Indianapolis",
+          "power_state_mechanism": {
+            "guest_transition_config": {
+              "should_fail_on_script_failure": false,
+              "enable_script_exec": false
+            },
+            "mechanism": "HARD"
+          },
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "data_source_reference": {
+                "kind": "image",
+                "uuid": "e35dd344-41dd-4c67-90e4-58136ea202db"
+              },
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "cb50728a-ee61-459a-b9a4-b2945f200511",
+              "disk_size_bytes": 42949672960,
+              "disk_size_mib": 40960
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "c6fd3fe2-a914-4b4b-962e-3658518021e8"
+            }
+          ]
+        },
+        "name": "demo_sw"
+      },
+      "metadata": {
+        "last_update_time": "2019-06-15T18:55:40Z",
+        "kind": "vm",
+        "uuid": "e7b42f17-081f-4c97-9e71-f0b7703decbc",
+        "project_reference": {
+          "kind": "project",
+          "name": "default",
+          "uuid": "72acfcc2-f524-41f0-adb0-c142fa41defc"
+        },
+        "spec_version": 3,
+        "creation_time": "2019-06-03T14:15:39Z",
+        "owner_reference": {
+          "kind": "user",
+          "uuid": "00000000-0000-0000-0000-000000000000",
+          "name": "admin"
+        },
+        "categories": {}
+      }
+    },
+    {
+      "status": {
+        "state": "COMPLETE",
+        "name": "Nutanix-Clone-NMB_Bank_VM1",
+        "resources": {
+          "num_threads_per_core": 1,
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 2,
+          "gpu_list": [],
+          "protection_type": "UNPROTECTED",
+          "memory_size_mib": 4096,
+          "hardware_clock_timezone": "Asia/Calcutta",
+          "power_state_mechanism": {
+            "guest_transition_config": {}
+          },
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "7554c5b0-f513-4f5d-beb2-cf548e881f82",
+              "disk_size_bytes": 42949672960,
+              "disk_size_mib": 40960
+            }
+          ],
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "1dd655d3-1ec9-4308-8a76-0c93c987137c",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.220",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:66:a4:5a",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "serial_port_list": [],
+          "guest_tools": {
+            "nutanix_guest_tools": {
+              "available_version": "1.6",
+              "ngt_state": "UNINSTALLED",
+              "iso_mount_state": "UNMOUNTED",
+              "state": "ENABLED",
+              "enabled_capability_list": [
+                "VSS_SNAPSHOT"
+              ],
+              "is_reachable": false
+            }
+          },
+          "hypervisor_type": "AHV",
+          "power_state": "OFF"
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff",
+          "name": "DEMO-AHV"
+        }
+      },
+      "spec": {
+        "name": "Nutanix-Clone-NMB_Bank_VM1",
+        "resources": {
+          "num_threads_per_core": 1,
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "serial_port_list": [],
+          "guest_tools": {
+            "nutanix_guest_tools": {
+              "iso_mount_state": "UNMOUNTED",
+              "enabled_capability_list": [
+                "VSS_SNAPSHOT"
+              ],
+              "state": "ENABLED",
+              "ngt_state": "UNINSTALLED"
+            }
+          },
+          "num_vcpus_per_socket": 1,
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "1dd655d3-1ec9-4308-8a76-0c93c987137c",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.220",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:66:a4:5a",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "num_sockets": 2,
+          "gpu_list": [],
+          "memory_size_mib": 4096,
+          "power_state": "OFF",
+          "hardware_clock_timezone": "Asia/Calcutta",
+          "power_state_mechanism": {},
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "7554c5b0-f513-4f5d-beb2-cf548e881f82",
+              "disk_size_bytes": 42949672960,
+              "disk_size_mib": 40960
+            }
+          ]
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "name": "DEMO-AHV",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff"
+        }
+      },
+      "metadata": {
+        "last_update_time": "2019-06-04T02:15:39Z",
+        "kind": "vm",
+        "uuid": "5990cad9-2218-4a44-bf57-dd2335993bba",
+        "project_reference": {
+          "kind": "project",
+          "name": "default",
+          "uuid": "72acfcc2-f524-41f0-adb0-c142fa41defc"
+        },
+        "spec_version": 0,
+        "creation_time": "2019-06-04T02:15:39Z",
+        "owner_reference": {
+          "kind": "user",
+          "uuid": "00000000-0000-0000-0000-000000000000",
+          "name": "admin"
+        },
+        "categories": {}
+      }
+    },
+    {
+      "status": {
+        "state": "COMPLETE",
+        "cluster_reference": {
+          "kind": "cluster",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff",
+          "name": "DEMO-AHV"
+        },
+        "description": "OST",
+        "resources": {
+          "num_threads_per_core": 1,
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 2,
+          "gpu_list": [],
+          "protection_type": "UNPROTECTED",
+          "memory_size_mib": 4096,
+          "hardware_clock_timezone": "America/New_York",
+          "power_state_mechanism": {
+            "guest_transition_config": {}
+          },
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 3,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "7187d86e-d7ff-43a9-aa4d-3e603baa65e6",
+              "disk_size_bytes": 1073741824,
+              "disk_size_mib": 1024
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 2,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "1a4a96d8-fb2e-4cd4-9243-b8179b333ecd",
+              "disk_size_bytes": 21474836480,
+              "disk_size_mib": 20480
+            },
+            {
+              "data_source_reference": {
+                "kind": "image",
+                "uuid": "e35dd344-41dd-4c67-90e4-58136ea202db"
+              },
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "cfeea4be-c44c-4272-ac14-f198d392c91c",
+              "disk_size_bytes": 42949672960,
+              "disk_size_mib": 40960
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "90c5ddcf-4616-496d-a2a0-7c3842cd7d62"
+            }
+          ],
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "nic_list": [
+            {
+              "dns_ip_addresses_list": [
+                "10.42.196.10",
+                "10.42.194.10"
+              ],
+              "nic_type": "NORMAL_NIC",
+              "uuid": "f3299c52-3665-48ae-820a-9fa9ca7d34b7",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.164",
+                  "type": "ASSIGNED",
+                  "prefix_length": 24,
+                  "gateway_address_list": [
+                    "10.42.220.1"
+                  ],
+                  "ip_type": "DHCP"
+                },
+                {
+                  "ip": "10.42.220.164",
+                  "type": "LEARNED",
+                  "prefix_length": 24,
+                  "gateway_address_list": [
+                    "10.42.220.1"
+                  ],
+                  "ip_type": "DHCP"
+                }
+              ],
+              "dhcp_server_ip": "10.42.220.254",
+              "mac_address": "50:6b:8d:c0:b8:00",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            },
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "411c0568-f250-46dc-a721-03ba6f2cc9b7",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.5",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:99:b0:42",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": false
+            }
+          ],
+          "host_reference": {
+            "kind": "host",
+            "uuid": "6a68189b-77e0-4104-9c97-d3b083d842a6",
+            "name": "10.42.195.27"
+          },
+          "serial_port_list": [],
+          "guest_tools": {
+            "nutanix_guest_tools": {
+              "available_version": "1.6",
+              "ngt_state": "INSTALLED",
+              "iso_mount_state": "UNMOUNTED",
+              "state": "ENABLED",
+              "version": "1.6",
+              "enabled_capability_list": [
+                "SELF_SERVICE_RESTORE",
+                "VSS_SNAPSHOT"
+              ],
+              "guest_os_version": "windows:64:Windows7Enterprise",
+              "is_reachable": true
+            }
+          },
+          "hypervisor_type": "AHV",
+          "power_state": "ON"
+        },
+        "name": "demo_sw2"
+      },
+      "spec": {
+        "cluster_reference": {
+          "kind": "cluster",
+          "name": "DEMO-AHV",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff"
+        },
+        "description": "OST",
+        "resources": {
+          "num_threads_per_core": 1,
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "serial_port_list": [],
+          "guest_tools": {
+            "nutanix_guest_tools": {
+              "iso_mount_state": "UNMOUNTED",
+              "enabled_capability_list": [
+                "SELF_SERVICE_RESTORE",
+                "VSS_SNAPSHOT"
+              ],
+              "state": "ENABLED",
+              "version": "1.6",
+              "ngt_state": "INSTALLED"
+            }
+          },
+          "num_vcpus_per_socket": 1,
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "f3299c52-3665-48ae-820a-9fa9ca7d34b7",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.164",
+                  "type": "ASSIGNED",
+                  "prefix_length": 24,
+                  "gateway_address_list": [
+                    "10.42.220.1"
+                  ],
+                  "ip_type": "DHCP"
+                }
+              ],
+              "mac_address": "50:6b:8d:c0:b8:00",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            },
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "411c0568-f250-46dc-a721-03ba6f2cc9b7",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.5",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:99:b0:42",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": false
+            }
+          ],
+          "num_sockets": 2,
+          "gpu_list": [],
+          "memory_size_mib": 4096,
+          "power_state": "ON",
+          "hardware_clock_timezone": "America/New_York",
+          "power_state_mechanism": {},
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 3,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "7187d86e-d7ff-43a9-aa4d-3e603baa65e6",
+              "disk_size_bytes": 1073741824,
+              "disk_size_mib": 1024
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 2,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "1a4a96d8-fb2e-4cd4-9243-b8179b333ecd",
+              "disk_size_bytes": 21474836480,
+              "disk_size_mib": 20480
+            },
+            {
+              "data_source_reference": {
+                "kind": "image",
+                "uuid": "e35dd344-41dd-4c67-90e4-58136ea202db"
+              },
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "cfeea4be-c44c-4272-ac14-f198d392c91c",
+              "disk_size_bytes": 42949672960,
+              "disk_size_mib": 40960
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "90c5ddcf-4616-496d-a2a0-7c3842cd7d62"
+            }
+          ]
+        },
+        "name": "demo_sw2"
+      },
+      "metadata": {
+        "last_update_time": "2019-06-15T18:55:40Z",
+        "kind": "vm",
+        "uuid": "f821131a-dab4-4c81-9793-ebec0ef1f9b1",
+        "project_reference": {
+          "kind": "project",
+          "name": "default",
+          "uuid": "72acfcc2-f524-41f0-adb0-c142fa41defc"
+        },
+        "spec_version": 4,
+        "creation_time": "2019-06-06T16:45:42Z",
+        "owner_reference": {
+          "kind": "user",
+          "uuid": "00000000-0000-0000-0000-000000000000",
+          "name": "admin"
+        },
+        "categories": {}
+      }
+    },
+    {
+      "status": {
+        "state": "COMPLETE",
+        "execution_context": {
+          "task_uuids": [
+            "d612696e-c1b8-483a-a449-c3c4053cbf45"
+          ]
+        },
+        "name": "HAPROXY-APP",
+        "resources": {
+          "num_threads_per_core": 1,
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 2,
+          "gpu_list": [],
+          "protection_type": "UNPROTECTED",
+          "memory_size_mib": 2048,
+          "boot_config": {
+            "boot_device": {
+              "disk_address": {
+                "device_index": 0,
+                "adapter_type": "SCSI"
+              }
+            }
+          },
+          "hardware_clock_timezone": "UTC",
+          "guest_customization": {
+            "cloud_init": {
+              "user_data": "I2Nsb3VkLWNvbmZpZwp1c2VyczoKICAtIG5hbWU6IHJvb3QKICAgIHNzaC1hdXRob3JpemVkLWtleXM6CiAgICAgIC0gc3NoLXJzYSBBQUFBQjNOemFDMXljMkVBQUFBQkl3QUFBUUVBeU8ra09haGlxdmlPNk0wVFlMUEFleFdWVWNNZUdEUlYvdk83MHY0L1dIWjhWdy9UcktBQ1BoVG1iTWU5LzJ6Z0xQeTVPMUsvbGpjemhiUlFIaFg5WU9jYU9WdUdsT2Q0K0hocVB6bzhOTGtOaTNPVjA5K2I2ekQ5S3llVTl0UkZXanhDYXN1R0xZU3NLb2lsblFPbFZmVmp1bUFQYjIrODFOcXBKWVBSZ1NmT1d0UzZCNzhoMHFpcFJwakwxV2RRS09CNEgxMXhHWWNYSStXcy9GcXZoQnBoUVF3SnlwOEduTFNOcWlNZXdrUkZaT1ZCZjFVTFZweGdRQXc3amYzUGIxK0crTDlSdk5MTkJ2QUpkV3VOakMyTWI1Uks0RVJpZi81YUszSi9KSmwzYkMxMGxVYUxVZzFBMStRbXdqaGVNN2dWWEFzRXNiamFSSUZKc1RxZjN3PT0gbm9kZXVzZXJAZGVtby5udXRhbml4LmNvbQogICAgc3VkbzogWydBTEw9KEFMTCkgTk9QQVNTV0Q6QUxMJ10="
+            },
+            "is_overridable": false
+          },
+          "power_state_mechanism": {
+            "guest_transition_config": {
+              "should_fail_on_script_failure": false,
+              "enable_script_exec": false
+            },
+            "mechanism": "HARD"
+          },
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "data_source_reference": {
+                "kind": "image",
+                "uuid": "5c7bdd7f-40ff-48a5-a9f6-a394251001c4"
+              },
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "b47db223-c5ac-418e-af10-0ea4a7cba913",
+              "disk_size_bytes": 10737418240,
+              "disk_size_mib": 10240
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 3,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "75b4e666-b2d4-4d02-98dc-79125d270bdf",
+              "disk_size_bytes": 382976,
+              "disk_size_mib": 1
+            }
+          ],
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "ec48e66d-5cbe-48c2-ae2e-d6e5bc3d0adc",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.215",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:b1:8e:12",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "serial_port_list": [],
+          "hypervisor_type": "AHV",
+          "power_state": "OFF"
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff",
+          "name": "DEMO-AHV"
+        }
+      },
+      "spec": {
+        "name": "HAPROXY-APP",
+        "resources": {
+          "num_threads_per_core": 1,
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "serial_port_list": [],
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "ec48e66d-5cbe-48c2-ae2e-d6e5bc3d0adc",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.215",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:b1:8e:12",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 2,
+          "gpu_list": [],
+          "memory_size_mib": 2048,
+          "power_state": "OFF",
+          "hardware_clock_timezone": "UTC",
+          "guest_customization": {
+            "cloud_init": {
+              "user_data": "I2Nsb3VkLWNvbmZpZwp1c2VyczoKICAtIG5hbWU6IHJvb3QKICAgIHNzaC1hdXRob3JpemVkLWtleXM6CiAgICAgIC0gc3NoLXJzYSBBQUFBQjNOemFDMXljMkVBQUFBQkl3QUFBUUVBeU8ra09haGlxdmlPNk0wVFlMUEFleFdWVWNNZUdEUlYvdk83MHY0L1dIWjhWdy9UcktBQ1BoVG1iTWU5LzJ6Z0xQeTVPMUsvbGpjemhiUlFIaFg5WU9jYU9WdUdsT2Q0K0hocVB6bzhOTGtOaTNPVjA5K2I2ekQ5S3llVTl0UkZXanhDYXN1R0xZU3NLb2lsblFPbFZmVmp1bUFQYjIrODFOcXBKWVBSZ1NmT1d0UzZCNzhoMHFpcFJwakwxV2RRS09CNEgxMXhHWWNYSStXcy9GcXZoQnBoUVF3SnlwOEduTFNOcWlNZXdrUkZaT1ZCZjFVTFZweGdRQXc3amYzUGIxK0crTDlSdk5MTkJ2QUpkV3VOakMyTWI1Uks0RVJpZi81YUszSi9KSmwzYkMxMGxVYUxVZzFBMStRbXdqaGVNN2dWWEFzRXNiamFSSUZKc1RxZjN3PT0gbm9kZXVzZXJAZGVtby5udXRhbml4LmNvbQogICAgc3VkbzogWydBTEw9KEFMTCkgTk9QQVNTV0Q6QUxMJ10="
+            },
+            "is_overridable": false
+          },
+          "power_state_mechanism": {
+            "guest_transition_config": {
+              "should_fail_on_script_failure": false,
+              "enable_script_exec": false
+            },
+            "mechanism": "HARD"
+          },
+          "vga_console_enabled": true,
+          "boot_config": {
+            "boot_device": {
+              "disk_address": {
+                "device_index": 0,
+                "adapter_type": "SCSI"
+              }
+            }
+          },
+          "disk_list": [
+            {
+              "data_source_reference": {
+                "kind": "image",
+                "uuid": "5c7bdd7f-40ff-48a5-a9f6-a394251001c4"
+              },
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "b47db223-c5ac-418e-af10-0ea4a7cba913",
+              "disk_size_bytes": 10737418240,
+              "disk_size_mib": 10240
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 3,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "75b4e666-b2d4-4d02-98dc-79125d270bdf",
+              "disk_size_bytes": 382976,
+              "disk_size_mib": 1
+            }
+          ]
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "name": "DEMO-AHV",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff"
+        }
+      },
+      "metadata": {
+        "last_update_time": "2019-06-15T18:55:40Z",
+        "kind": "vm",
+        "uuid": "a7713dc1-716f-4b00-883f-712062947f6a",
+        "project_reference": {
+          "kind": "project",
+          "name": "Demo",
+          "uuid": "1972c598-b5cd-4379-87b5-983e0b2d3fec"
+        },
+        "spec_version": 4,
+        "creation_time": "2019-06-06T20:27:35Z",
+        "owner_reference": {
+          "kind": "user",
+          "uuid": "00000000-0000-0000-0000-000000000000",
+          "name": "admin"
+        },
+        "categories": {}
+      }
+    },
+    {
+      "status": {
+        "state": "COMPLETE",
+        "execution_context": {
+          "task_uuids": [
+            "2caa2323-60c4-4efb-932e-b55605384a18"
+          ]
+        },
+        "name": "APACHE_PHP0-APP",
+        "resources": {
+          "num_threads_per_core": 1,
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 2,
+          "gpu_list": [],
+          "protection_type": "PD_PROTECTED",
+          "memory_size_mib": 2048,
+          "boot_config": {
+            "boot_device": {
+              "disk_address": {
+                "device_index": 0,
+                "adapter_type": "SCSI"
+              }
+            }
+          },
+          "hardware_clock_timezone": "UTC",
+          "guest_customization": {
+            "cloud_init": {
+              "user_data": "I2Nsb3VkLWNvbmZpZwp1c2VyczoKICAtIG5hbWU6IHJvb3QKICAgIHNzaC1hdXRob3JpemVkLWtleXM6CiAgICAgIC0gc3NoLXJzYSBBQUFBQjNOemFDMXljMkVBQUFBQkl3QUFBUUVBeU8ra09haGlxdmlPNk0wVFlMUEFleFdWVWNNZUdEUlYvdk83MHY0L1dIWjhWdy9UcktBQ1BoVG1iTWU5LzJ6Z0xQeTVPMUsvbGpjemhiUlFIaFg5WU9jYU9WdUdsT2Q0K0hocVB6bzhOTGtOaTNPVjA5K2I2ekQ5S3llVTl0UkZXanhDYXN1R0xZU3NLb2lsblFPbFZmVmp1bUFQYjIrODFOcXBKWVBSZ1NmT1d0UzZCNzhoMHFpcFJwakwxV2RRS09CNEgxMXhHWWNYSStXcy9GcXZoQnBoUVF3SnlwOEduTFNOcWlNZXdrUkZaT1ZCZjFVTFZweGdRQXc3amYzUGIxK0crTDlSdk5MTkJ2QUpkV3VOakMyTWI1Uks0RVJpZi81YUszSi9KSmwzYkMxMGxVYUxVZzFBMStRbXdqaGVNN2dWWEFzRXNiamFSSUZKc1RxZjN3PT0gbm9kZXVzZXJAZGVtby5udXRhbml4LmNvbQogICAgc3VkbzogWydBTEw9KEFMTCkgTk9QQVNTV0Q6QUxMJ10="
+            },
+            "is_overridable": false
+          },
+          "power_state_mechanism": {
+            "guest_transition_config": {
+              "should_fail_on_script_failure": false,
+              "enable_script_exec": false
+            },
+            "mechanism": "HARD"
+          },
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "data_source_reference": {
+                "kind": "image",
+                "uuid": "5c7bdd7f-40ff-48a5-a9f6-a394251001c4"
+              },
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "5e7b50a3-bc36-48c9-9b42-f799dba8a32e",
+              "disk_size_bytes": 10737418240,
+              "disk_size_mib": 10240
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 3,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "1d459690-3c78-4e39-857f-d3accb1e0a7d"
+            }
+          ],
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "0f252a13-4a4b-4264-965f-48ce1b262429",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.198",
+                  "type": "ASSIGNED"
+                },
+                {
+                  "ip": "10.42.220.198",
+                  "type": "LEARNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:b5:fe:3b",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "host_reference": {
+            "kind": "host",
+            "uuid": "b4d46174-5f10-485e-90ac-ce7e3c69caf8",
+            "name": "10.42.195.28"
+          },
+          "serial_port_list": [],
+          "guest_tools": {
+            "nutanix_guest_tools": {
+              "available_version": "1.6",
+              "ngt_state": "UNINSTALLED",
+              "iso_mount_state": "UNMOUNTED",
+              "state": "ENABLED",
+              "enabled_capability_list": [
+                "SELF_SERVICE_RESTORE",
+                "VSS_SNAPSHOT"
+              ],
+              "is_reachable": false
+            }
+          },
+          "hypervisor_type": "AHV",
+          "power_state": "ON"
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff",
+          "name": "DEMO-AHV"
+        }
+      },
+      "spec": {
+        "name": "APACHE_PHP0-APP",
+        "resources": {
+          "num_threads_per_core": 1,
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "serial_port_list": [],
+          "guest_tools": {
+            "nutanix_guest_tools": {
+              "iso_mount_state": "UNMOUNTED",
+              "enabled_capability_list": [
+                "SELF_SERVICE_RESTORE",
+                "VSS_SNAPSHOT"
+              ],
+              "state": "ENABLED",
+              "ngt_state": "UNINSTALLED"
+            }
+          },
+          "num_vcpus_per_socket": 1,
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "0f252a13-4a4b-4264-965f-48ce1b262429",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.198",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:b5:fe:3b",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "num_sockets": 2,
+          "gpu_list": [],
+          "memory_size_mib": 2048,
+          "power_state": "ON",
+          "hardware_clock_timezone": "UTC",
+          "guest_customization": {
+            "cloud_init": {
+              "user_data": "I2Nsb3VkLWNvbmZpZwp1c2VyczoKICAtIG5hbWU6IHJvb3QKICAgIHNzaC1hdXRob3JpemVkLWtleXM6CiAgICAgIC0gc3NoLXJzYSBBQUFBQjNOemFDMXljMkVBQUFBQkl3QUFBUUVBeU8ra09haGlxdmlPNk0wVFlMUEFleFdWVWNNZUdEUlYvdk83MHY0L1dIWjhWdy9UcktBQ1BoVG1iTWU5LzJ6Z0xQeTVPMUsvbGpjemhiUlFIaFg5WU9jYU9WdUdsT2Q0K0hocVB6bzhOTGtOaTNPVjA5K2I2ekQ5S3llVTl0UkZXanhDYXN1R0xZU3NLb2lsblFPbFZmVmp1bUFQYjIrODFOcXBKWVBSZ1NmT1d0UzZCNzhoMHFpcFJwakwxV2RRS09CNEgxMXhHWWNYSStXcy9GcXZoQnBoUVF3SnlwOEduTFNOcWlNZXdrUkZaT1ZCZjFVTFZweGdRQXc3amYzUGIxK0crTDlSdk5MTkJ2QUpkV3VOakMyTWI1Uks0RVJpZi81YUszSi9KSmwzYkMxMGxVYUxVZzFBMStRbXdqaGVNN2dWWEFzRXNiamFSSUZKc1RxZjN3PT0gbm9kZXVzZXJAZGVtby5udXRhbml4LmNvbQogICAgc3VkbzogWydBTEw9KEFMTCkgTk9QQVNTV0Q6QUxMJ10="
+            },
+            "is_overridable": false
+          },
+          "power_state_mechanism": {
+            "guest_transition_config": {
+              "should_fail_on_script_failure": false,
+              "enable_script_exec": false
+            },
+            "mechanism": "HARD"
+          },
+          "vga_console_enabled": true,
+          "boot_config": {
+            "boot_device": {
+              "disk_address": {
+                "device_index": 0,
+                "adapter_type": "SCSI"
+              }
+            }
+          },
+          "disk_list": [
+            {
+              "data_source_reference": {
+                "kind": "image",
+                "uuid": "5c7bdd7f-40ff-48a5-a9f6-a394251001c4"
+              },
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "5e7b50a3-bc36-48c9-9b42-f799dba8a32e",
+              "disk_size_bytes": 10737418240,
+              "disk_size_mib": 10240
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 3,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "1d459690-3c78-4e39-857f-d3accb1e0a7d"
+            }
+          ]
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "name": "DEMO-AHV",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff"
+        }
+      },
+      "metadata": {
+        "last_update_time": "2019-06-10T14:16:40Z",
+        "kind": "vm",
+        "uuid": "67c6b35c-c73e-4978-8687-b4dc57059952",
+        "project_reference": {
+          "kind": "project",
+          "name": "Demo",
+          "uuid": "1972c598-b5cd-4379-87b5-983e0b2d3fec"
+        },
+        "spec_version": 4,
+        "creation_time": "2019-06-06T20:27:35Z",
+        "owner_reference": {
+          "kind": "user",
+          "uuid": "00000000-0000-0000-0000-000000000000",
+          "name": "admin"
+        },
+        "categories": {}
+      }
+    },
+    {
+      "status": {
+        "state": "COMPLETE",
+        "name": "Nutanix-Clone-demo-dust",
+        "resources": {
+          "num_threads_per_core": 1,
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 4,
+          "gpu_list": [],
+          "protection_type": "UNPROTECTED",
+          "memory_size_mib": 8192,
+          "hardware_clock_timezone": "America/Los_Angeles",
+          "power_state_mechanism": {
+            "guest_transition_config": {}
+          },
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "7d555e20-d023-448a-a20c-c495a6418c37",
+              "disk_size_bytes": 291956736,
+              "disk_size_mib": 279
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "849b2020-a02c-45fe-9314-8f16808dadad",
+              "disk_size_bytes": 44023414784,
+              "disk_size_mib": 41984
+            }
+          ],
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "0e051dd0-3190-4cc4-b259-24d3a19e11fe",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.131",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:e4:67:a4",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "serial_port_list": [],
+          "guest_tools": {
+            "nutanix_guest_tools": {
+              "available_version": "1.6",
+              "ngt_state": "UNINSTALLED",
+              "iso_mount_state": "MOUNTED",
+              "state": "ENABLED",
+              "enabled_capability_list": [
+                "SELF_SERVICE_RESTORE",
+                "VSS_SNAPSHOT"
+              ],
+              "is_reachable": false
+            }
+          },
+          "hypervisor_type": "AHV",
+          "power_state": "OFF"
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff",
+          "name": "DEMO-AHV"
+        }
+      },
+      "spec": {
+        "name": "Nutanix-Clone-demo-dust",
+        "resources": {
+          "num_threads_per_core": 1,
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "serial_port_list": [],
+          "guest_tools": {
+            "nutanix_guest_tools": {
+              "iso_mount_state": "MOUNTED",
+              "enabled_capability_list": [
+                "SELF_SERVICE_RESTORE",
+                "VSS_SNAPSHOT"
+              ],
+              "state": "ENABLED",
+              "ngt_state": "UNINSTALLED"
+            }
+          },
+          "num_vcpus_per_socket": 1,
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "0e051dd0-3190-4cc4-b259-24d3a19e11fe",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.131",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:e4:67:a4",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "num_sockets": 4,
+          "gpu_list": [],
+          "memory_size_mib": 8192,
+          "power_state": "OFF",
+          "hardware_clock_timezone": "America/Los_Angeles",
+          "power_state_mechanism": {},
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "7d555e20-d023-448a-a20c-c495a6418c37",
+              "disk_size_bytes": 291956736,
+              "disk_size_mib": 279
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "849b2020-a02c-45fe-9314-8f16808dadad",
+              "disk_size_bytes": 44023414784,
+              "disk_size_mib": 41984
+            }
+          ]
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "name": "DEMO-AHV",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff"
+        }
+      },
+      "metadata": {
+        "last_update_time": "2019-06-15T18:55:40Z",
+        "kind": "vm",
+        "uuid": "80b5b77a-1c19-4497-8e20-ef8e84dc5b27",
+        "spec_version": 0,
+        "creation_time": "2019-06-07T18:20:32Z",
+        "categories": {}
+      }
+    },
+    {
+      "status": {
+        "state": "COMPLETE",
+        "name": "KiiltoERP1",
+        "resources": {
+          "num_threads_per_core": 1,
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 1,
+          "gpu_list": [],
+          "protection_type": "PD_PROTECTED",
+          "memory_size_mib": 1024,
+          "hardware_clock_timezone": "Europe/Amsterdam",
+          "power_state_mechanism": {
+            "guest_transition_config": {}
+          },
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "f42d7bb6-8001-4f61-82a4-b6d979e2b1de",
+              "disk_size_bytes": 10737418240,
+              "disk_size_mib": 10240
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "ab253dfa-7107-4420-b747-84f6e6e31283"
+            }
+          ],
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "8edce3f2-5f9a-4d0b-aa06-26c7ded517b0",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.12",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:73:9d:a8",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "serial_port_list": [],
+          "hypervisor_type": "AHV",
+          "power_state": "OFF"
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff",
+          "name": "DEMO-AHV"
+        }
+      },
+      "spec": {
+        "name": "KiiltoERP1",
+        "resources": {
+          "num_threads_per_core": 1,
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "serial_port_list": [],
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "8edce3f2-5f9a-4d0b-aa06-26c7ded517b0",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.12",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:73:9d:a8",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 1,
+          "gpu_list": [],
+          "memory_size_mib": 1024,
+          "power_state": "OFF",
+          "hardware_clock_timezone": "Europe/Amsterdam",
+          "power_state_mechanism": {},
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "f42d7bb6-8001-4f61-82a4-b6d979e2b1de",
+              "disk_size_bytes": 10737418240,
+              "disk_size_mib": 10240
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "ab253dfa-7107-4420-b747-84f6e6e31283"
+            }
+          ]
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "name": "DEMO-AHV",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff"
+        }
+      },
+      "metadata": {
+        "last_update_time": "2019-06-10T12:30:47Z",
+        "kind": "vm",
+        "uuid": "da36eb3f-32d9-46c2-be04-507ff64fd6a4",
+        "project_reference": {
+          "kind": "project",
+          "name": "default",
+          "uuid": "72acfcc2-f524-41f0-adb0-c142fa41defc"
+        },
+        "spec_version": 0,
+        "creation_time": "2019-06-10T12:30:47Z",
+        "owner_reference": {
+          "kind": "user",
+          "uuid": "00000000-0000-0000-0000-000000000000",
+          "name": "admin"
+        },
+        "categories": {}
+      }
+    },
+    {
+      "status": {
+        "state": "COMPLETE",
+        "name": "KiiltoERP2",
+        "resources": {
+          "num_threads_per_core": 1,
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 1,
+          "gpu_list": [],
+          "protection_type": "UNPROTECTED",
+          "memory_size_mib": 1024,
+          "hardware_clock_timezone": "Europe/Amsterdam",
+          "power_state_mechanism": {
+            "guest_transition_config": {}
+          },
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "0416fbf1-4954-4a29-bc63-cc55bbf31bb5",
+              "disk_size_bytes": 10737418240,
+              "disk_size_mib": 10240
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "fe1257af-f75f-4b31-9308-fc5befbf842f"
+            }
+          ],
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "c6a43855-e98f-4aba-b795-dc66cdba752d",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.112",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:30:60:f2",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "serial_port_list": [],
+          "hypervisor_type": "AHV",
+          "power_state": "OFF"
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff",
+          "name": "DEMO-AHV"
+        }
+      },
+      "spec": {
+        "name": "KiiltoERP2",
+        "resources": {
+          "num_threads_per_core": 1,
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "serial_port_list": [],
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "c6a43855-e98f-4aba-b795-dc66cdba752d",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.112",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:30:60:f2",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 1,
+          "gpu_list": [],
+          "memory_size_mib": 1024,
+          "power_state": "OFF",
+          "hardware_clock_timezone": "Europe/Amsterdam",
+          "power_state_mechanism": {},
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "0416fbf1-4954-4a29-bc63-cc55bbf31bb5",
+              "disk_size_bytes": 10737418240,
+              "disk_size_mib": 10240
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "fe1257af-f75f-4b31-9308-fc5befbf842f"
+            }
+          ]
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "name": "DEMO-AHV",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff"
+        }
+      },
+      "metadata": {
+        "last_update_time": "2019-06-10T12:30:47Z",
+        "kind": "vm",
+        "uuid": "be66ffb3-5916-45d9-b2ea-3f6ca77a2007",
+        "project_reference": {
+          "kind": "project",
+          "name": "default",
+          "uuid": "72acfcc2-f524-41f0-adb0-c142fa41defc"
+        },
+        "spec_version": 0,
+        "creation_time": "2019-06-10T12:30:47Z",
+        "owner_reference": {
+          "kind": "user",
+          "uuid": "00000000-0000-0000-0000-000000000000",
+          "name": "admin"
+        },
+        "categories": {}
+      }
+    },
+    {
+      "status": {
+        "state": "COMPLETE",
+        "name": "KiiltoERP3",
+        "resources": {
+          "num_threads_per_core": 1,
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 1,
+          "gpu_list": [],
+          "protection_type": "UNPROTECTED",
+          "memory_size_mib": 1024,
+          "hardware_clock_timezone": "Europe/Amsterdam",
+          "power_state_mechanism": {
+            "guest_transition_config": {}
+          },
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "30d2981b-40e5-4542-9e5b-a2f1f8a6a357",
+              "disk_size_bytes": 10737418240,
+              "disk_size_mib": 10240
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "c4e51950-67d6-4d17-b340-f9975995d7f8"
+            }
+          ],
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "267b8a5e-f8f1-4ef6-8c8b-56b7d0be9288",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.178",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:cc:70:c2",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "serial_port_list": [],
+          "hypervisor_type": "AHV",
+          "power_state": "OFF"
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff",
+          "name": "DEMO-AHV"
+        }
+      },
+      "spec": {
+        "name": "KiiltoERP3",
+        "resources": {
+          "num_threads_per_core": 1,
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "serial_port_list": [],
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "267b8a5e-f8f1-4ef6-8c8b-56b7d0be9288",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.178",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:cc:70:c2",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 1,
+          "gpu_list": [],
+          "memory_size_mib": 1024,
+          "power_state": "OFF",
+          "hardware_clock_timezone": "Europe/Amsterdam",
+          "power_state_mechanism": {},
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "30d2981b-40e5-4542-9e5b-a2f1f8a6a357",
+              "disk_size_bytes": 10737418240,
+              "disk_size_mib": 10240
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "c4e51950-67d6-4d17-b340-f9975995d7f8"
+            }
+          ]
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "name": "DEMO-AHV",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff"
+        }
+      },
+      "metadata": {
+        "last_update_time": "2019-06-10T12:30:47Z",
+        "kind": "vm",
+        "uuid": "c1289743-d52a-4c9e-8878-74a5f478d26c",
+        "project_reference": {
+          "kind": "project",
+          "name": "default",
+          "uuid": "72acfcc2-f524-41f0-adb0-c142fa41defc"
+        },
+        "spec_version": 0,
+        "creation_time": "2019-06-10T12:30:47Z",
+        "owner_reference": {
+          "kind": "user",
+          "uuid": "00000000-0000-0000-0000-000000000000",
+          "name": "admin"
+        },
+        "categories": {}
+      }
+    },
+    {
+      "status": {
+        "state": "COMPLETE",
+        "name": "KiiltoERP4",
+        "resources": {
+          "num_threads_per_core": 1,
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 1,
+          "gpu_list": [],
+          "protection_type": "UNPROTECTED",
+          "memory_size_mib": 1024,
+          "hardware_clock_timezone": "Europe/Amsterdam",
+          "power_state_mechanism": {
+            "guest_transition_config": {}
+          },
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "47e2d21d-50fc-41ed-814e-f5db59ea2263",
+              "disk_size_bytes": 10737418240,
+              "disk_size_mib": 10240
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "9d2cc57c-81bb-498d-8cb6-a0643cda7f94"
+            }
+          ],
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "38f419a4-55ab-4142-81b6-0eb442eb6adb",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.7",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:f7:5d:14",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "serial_port_list": [],
+          "hypervisor_type": "AHV",
+          "power_state": "OFF"
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff",
+          "name": "DEMO-AHV"
+        }
+      },
+      "spec": {
+        "name": "KiiltoERP4",
+        "resources": {
+          "num_threads_per_core": 1,
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "serial_port_list": [],
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "38f419a4-55ab-4142-81b6-0eb442eb6adb",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.7",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:f7:5d:14",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 1,
+          "gpu_list": [],
+          "memory_size_mib": 1024,
+          "power_state": "OFF",
+          "hardware_clock_timezone": "Europe/Amsterdam",
+          "power_state_mechanism": {},
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "47e2d21d-50fc-41ed-814e-f5db59ea2263",
+              "disk_size_bytes": 10737418240,
+              "disk_size_mib": 10240
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "9d2cc57c-81bb-498d-8cb6-a0643cda7f94"
+            }
+          ]
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "name": "DEMO-AHV",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff"
+        }
+      },
+      "metadata": {
+        "last_update_time": "2019-06-10T12:30:47Z",
+        "kind": "vm",
+        "uuid": "2ed5d381-d9c1-4c57-b1a2-97bccc501c0f",
+        "project_reference": {
+          "kind": "project",
+          "name": "default",
+          "uuid": "72acfcc2-f524-41f0-adb0-c142fa41defc"
+        },
+        "spec_version": 0,
+        "creation_time": "2019-06-10T12:30:47Z",
+        "owner_reference": {
+          "kind": "user",
+          "uuid": "00000000-0000-0000-0000-000000000000",
+          "name": "admin"
+        },
+        "categories": {}
+      }
+    },
+    {
+      "status": {
+        "state": "COMPLETE",
+        "name": "Nutanix-Clone-KiiltoERP1",
+        "resources": {
+          "num_threads_per_core": 1,
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 1,
+          "gpu_list": [],
+          "protection_type": "UNPROTECTED",
+          "memory_size_mib": 1024,
+          "hardware_clock_timezone": "Europe/Amsterdam",
+          "power_state_mechanism": {
+            "guest_transition_config": {}
+          },
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "c1a0af9b-638a-47d1-b9c5-543e97eb1b55",
+              "disk_size_bytes": 10737418240,
+              "disk_size_mib": 10240
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "3811bf19-7ac0-4ce4-b602-c6ed50023e52"
+            }
+          ],
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "4bc111bc-a47f-44b1-b538-3fcefd926bdf",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.168",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:e1:b1:d4",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "serial_port_list": [],
+          "hypervisor_type": "AHV",
+          "power_state": "OFF"
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff",
+          "name": "DEMO-AHV"
+        }
+      },
+      "spec": {
+        "name": "Nutanix-Clone-KiiltoERP1",
+        "resources": {
+          "num_threads_per_core": 1,
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "serial_port_list": [],
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "4bc111bc-a47f-44b1-b538-3fcefd926bdf",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.168",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:e1:b1:d4",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 1,
+          "gpu_list": [],
+          "memory_size_mib": 1024,
+          "power_state": "OFF",
+          "hardware_clock_timezone": "Europe/Amsterdam",
+          "power_state_mechanism": {},
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "c1a0af9b-638a-47d1-b9c5-543e97eb1b55",
+              "disk_size_bytes": 10737418240,
+              "disk_size_mib": 10240
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "3811bf19-7ac0-4ce4-b602-c6ed50023e52"
+            }
+          ]
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "name": "DEMO-AHV",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff"
+        }
+      },
+      "metadata": {
+        "last_update_time": "2019-06-10T19:48:47Z",
+        "kind": "vm",
+        "uuid": "a6768661-7a6f-471e-b411-451131c71373",
+        "project_reference": {
+          "kind": "project",
+          "name": "default",
+          "uuid": "72acfcc2-f524-41f0-adb0-c142fa41defc"
+        },
+        "spec_version": 0,
+        "creation_time": "2019-06-10T19:48:47Z",
+        "owner_reference": {
+          "kind": "user",
+          "uuid": "00000000-0000-0000-0000-000000000000",
+          "name": "admin"
+        },
+        "categories": {}
+      }
+    },
+    {
+      "status": {
+        "state": "COMPLETE",
+        "name": "Nutanix-Clone-KiiltoERP1-190611-021746",
+        "resources": {
+          "num_threads_per_core": 1,
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 1,
+          "gpu_list": [],
+          "protection_type": "UNPROTECTED",
+          "memory_size_mib": 1024,
+          "hardware_clock_timezone": "Europe/Amsterdam",
+          "power_state_mechanism": {
+            "guest_transition_config": {}
+          },
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "1fba5fa9-bd4a-4884-a9c7-bec9c5d1ca91",
+              "disk_size_bytes": 10737418240,
+              "disk_size_mib": 10240
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "8d765188-f287-4f73-a0ac-35d0282c4b81"
+            }
+          ],
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "003cd932-f74b-4ef8-8e63-e210dc5fa398",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.89",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:e2:78:c4",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "serial_port_list": [],
+          "hypervisor_type": "AHV",
+          "power_state": "OFF"
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff",
+          "name": "DEMO-AHV"
+        }
+      },
+      "spec": {
+        "name": "Nutanix-Clone-KiiltoERP1-190611-021746",
+        "resources": {
+          "num_threads_per_core": 1,
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "serial_port_list": [],
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "003cd932-f74b-4ef8-8e63-e210dc5fa398",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.89",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:e2:78:c4",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 1,
+          "gpu_list": [],
+          "memory_size_mib": 1024,
+          "power_state": "OFF",
+          "hardware_clock_timezone": "Europe/Amsterdam",
+          "power_state_mechanism": {},
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "1fba5fa9-bd4a-4884-a9c7-bec9c5d1ca91",
+              "disk_size_bytes": 10737418240,
+              "disk_size_mib": 10240
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "8d765188-f287-4f73-a0ac-35d0282c4b81"
+            }
+          ]
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "name": "DEMO-AHV",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff"
+        }
+      },
+      "metadata": {
+        "last_update_time": "2019-06-11T09:18:48Z",
+        "kind": "vm",
+        "uuid": "562ceca7-1126-4173-882e-efb3b0d49d2b",
+        "project_reference": {
+          "kind": "project",
+          "name": "default",
+          "uuid": "72acfcc2-f524-41f0-adb0-c142fa41defc"
+        },
+        "spec_version": 0,
+        "creation_time": "2019-06-11T09:18:48Z",
+        "owner_reference": {
+          "kind": "user",
+          "uuid": "00000000-0000-0000-0000-000000000000",
+          "name": "admin"
+        },
+        "categories": {}
+      }
+    },
+    {
+      "status": {
+        "description": "gt",
+        "state": "COMPLETE",
+        "execution_context": {
+          "task_uuids": [
+            "4c85bb79-1338-4b39-8f9e-2c84f67e7604"
+          ]
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff",
+          "name": "DEMO-AHV"
+        },
+        "resources": {
+          "num_threads_per_core": 1,
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 2,
+          "gpu_list": [],
+          "protection_type": "UNPROTECTED",
+          "memory_size_mib": 5120,
+          "hardware_clock_timezone": "Europe/London",
+          "power_state_mechanism": {
+            "guest_transition_config": {
+              "should_fail_on_script_failure": false,
+              "enable_script_exec": false
+            },
+            "mechanism": "HARD"
+          },
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "67fef017-f3a0-482b-b6a8-50843ff1a5b5",
+              "disk_size_bytes": 6442450944,
+              "disk_size_mib": 6144
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "cc748efd-ab3b-4ab9-957a-ff7e8c2a3cc5"
+            }
+          ],
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "nic_list": [],
+          "serial_port_list": [],
+          "hypervisor_type": "AHV",
+          "power_state": "OFF"
+        },
+        "name": "app-test1"
+      },
+      "spec": {
+        "cluster_reference": {
+          "kind": "cluster",
+          "name": "DEMO-AHV",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff"
+        },
+        "description": "gt",
+        "resources": {
+          "num_threads_per_core": 1,
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "serial_port_list": [],
+          "nic_list": [],
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 2,
+          "gpu_list": [],
+          "memory_size_mib": 5120,
+          "power_state": "OFF",
+          "hardware_clock_timezone": "Europe/London",
+          "power_state_mechanism": {
+            "guest_transition_config": {
+              "should_fail_on_script_failure": false,
+              "enable_script_exec": false
+            },
+            "mechanism": "HARD"
+          },
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "67fef017-f3a0-482b-b6a8-50843ff1a5b5",
+              "disk_size_bytes": 6442450944,
+              "disk_size_mib": 6144
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "cc748efd-ab3b-4ab9-957a-ff7e8c2a3cc5"
+            }
+          ]
+        },
+        "name": "app-test1"
+      },
+      "metadata": {
+        "last_update_time": "2019-06-15T18:55:40Z",
+        "kind": "vm",
+        "uuid": "f237eaf9-20e4-4d44-a803-59c0a1885295",
+        "project_reference": {
+          "kind": "project",
+          "name": "default",
+          "uuid": "72acfcc2-f524-41f0-adb0-c142fa41defc"
+        },
+        "spec_version": 2,
+        "creation_time": "2019-06-12T09:15:49Z",
+        "owner_reference": {
+          "kind": "user",
+          "uuid": "00000000-0000-0000-0000-000000000000",
+          "name": "admin"
+        },
+        "categories": {
+          "AppTier": "3t_db"
+        }
+      }
+    },
+    {
+      "status": {
+        "state": "COMPLETE",
+        "name": "Nutanix-Clone-BDTest",
+        "resources": {
+          "num_threads_per_core": 1,
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 2,
+          "gpu_list": [],
+          "protection_type": "UNPROTECTED",
+          "memory_size_mib": 4096,
+          "hardware_clock_timezone": "America/New_York",
+          "power_state_mechanism": {
+            "guest_transition_config": {}
+          },
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "0bcc633d-9792-4c51-b462-591cc4b8f4e8",
+              "disk_size_bytes": 42949672960,
+              "disk_size_mib": 40960
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "2a35b2e1-d3d5-4457-af55-5f9e8e5a32f5"
+            }
+          ],
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "4c144127-b5fe-4211-87db-1f609e087207",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.199",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:74:e9:43",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "serial_port_list": [],
+          "hypervisor_type": "AHV",
+          "power_state": "OFF"
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff",
+          "name": "DEMO-AHV"
+        }
+      },
+      "spec": {
+        "name": "Nutanix-Clone-BDTest",
+        "resources": {
+          "num_threads_per_core": 1,
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "serial_port_list": [],
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "4c144127-b5fe-4211-87db-1f609e087207",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.199",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:74:e9:43",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 2,
+          "gpu_list": [],
+          "memory_size_mib": 4096,
+          "power_state": "OFF",
+          "hardware_clock_timezone": "America/New_York",
+          "power_state_mechanism": {},
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "0bcc633d-9792-4c51-b462-591cc4b8f4e8",
+              "disk_size_bytes": 42949672960,
+              "disk_size_mib": 40960
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "2a35b2e1-d3d5-4457-af55-5f9e8e5a32f5"
+            }
+          ]
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "name": "DEMO-AHV",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff"
+        }
+      },
+      "metadata": {
+        "last_update_time": "2019-06-12T16:48:50Z",
+        "kind": "vm",
+        "uuid": "b9064780-99a3-4284-b72d-a41223d2b768",
+        "project_reference": {
+          "kind": "project",
+          "name": "default",
+          "uuid": "72acfcc2-f524-41f0-adb0-c142fa41defc"
+        },
+        "spec_version": 0,
+        "creation_time": "2019-06-12T16:48:50Z",
+        "owner_reference": {
+          "kind": "user",
+          "uuid": "00000000-0000-0000-0000-000000000000",
+          "name": "admin"
+        },
+        "categories": {}
+      }
+    },
+    {
+      "status": {
+        "state": "COMPLETE",
+        "name": "Nutanix-Clone-jenny-vm2",
+        "resources": {
+          "num_threads_per_core": 1,
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 2,
+          "gpu_list": [],
+          "protection_type": "UNPROTECTED",
+          "memory_size_mib": 8192,
+          "hardware_clock_timezone": "America/Los_Angeles",
+          "power_state_mechanism": {
+            "guest_transition_config": {}
+          },
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 1,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "b122c5fa-40f2-4805-8713-291c5fa69658",
+              "disk_size_bytes": 10737418240,
+              "disk_size_mib": 10240
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "f866e963-9a25-46cd-a217-ca9a0e6e37c3",
+              "disk_size_bytes": 10737418240,
+              "disk_size_mib": 10240
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "b32fca7b-a632-4928-8515-4275c052f000"
+            }
+          ],
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "842b4536-eb0f-48b1-8ddb-c5ae63d7a89c",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.159",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:c8:b5:ce",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "serial_port_list": [],
+          "hypervisor_type": "AHV",
+          "power_state": "OFF"
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff",
+          "name": "DEMO-AHV"
+        }
+      },
+      "spec": {
+        "name": "Nutanix-Clone-jenny-vm2",
+        "resources": {
+          "num_threads_per_core": 1,
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "serial_port_list": [],
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "842b4536-eb0f-48b1-8ddb-c5ae63d7a89c",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.159",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:c8:b5:ce",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 2,
+          "gpu_list": [],
+          "memory_size_mib": 8192,
+          "power_state": "OFF",
+          "hardware_clock_timezone": "America/Los_Angeles",
+          "power_state_mechanism": {},
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 1,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "b122c5fa-40f2-4805-8713-291c5fa69658",
+              "disk_size_bytes": 10737418240,
+              "disk_size_mib": 10240
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "f866e963-9a25-46cd-a217-ca9a0e6e37c3",
+              "disk_size_bytes": 10737418240,
+              "disk_size_mib": 10240
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "b32fca7b-a632-4928-8515-4275c052f000"
+            }
+          ]
+        },
+        "cluster_reference": {
+          "kind": "cluster",
+          "name": "DEMO-AHV",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff"
+        }
+      },
+      "metadata": {
+        "last_update_time": "2019-06-12T19:15:50Z",
+        "kind": "vm",
+        "uuid": "969d08b4-2802-4b9b-9f1b-0b7e6b30a6c9",
+        "project_reference": {
+          "kind": "project",
+          "name": "default",
+          "uuid": "72acfcc2-f524-41f0-adb0-c142fa41defc"
+        },
+        "spec_version": 0,
+        "creation_time": "2019-06-12T19:15:50Z",
+        "owner_reference": {
+          "kind": "user",
+          "uuid": "00000000-0000-0000-0000-000000000000",
+          "name": "admin"
+        },
+        "categories": {}
+      }
+    },
+    {
+      "status": {
+        "state": "COMPLETE",
+        "cluster_reference": {
+          "kind": "cluster",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff",
+          "name": "DEMO-AHV"
+        },
+        "description": "OST",
+        "resources": {
+          "num_threads_per_core": 1,
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 2,
+          "gpu_list": [],
+          "protection_type": "UNPROTECTED",
+          "memory_size_mib": 4096,
+          "hardware_clock_timezone": "America/New_York",
+          "power_state_mechanism": {
+            "guest_transition_config": {}
+          },
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 2,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "fb351a92-a4c4-4a2b-a09b-ca57abea3f2d",
+              "disk_size_bytes": 21474836480,
+              "disk_size_mib": 20480
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 3,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "c5fd0b1f-84b6-4caf-ac00-9cc6b8a8d553",
+              "disk_size_bytes": 1073741824,
+              "disk_size_mib": 1024
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "d86fc238-d1e5-451a-aaab-75ab029e4ad5",
+              "disk_size_bytes": 42949672960,
+              "disk_size_mib": 40960
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "2703671f-521d-47a5-bca9-eacc0cf7e8a1"
+            }
+          ],
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "212fcbbe-5e7a-4492-ba7e-3d17a4758bab",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.142",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:6a:c4:9a",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            },
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "e07c88f9-911b-4df4-a144-6b44682576ca",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.139",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:24:d5:82",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "serial_port_list": [],
+          "hypervisor_type": "AHV",
+          "power_state": "OFF"
+        },
+        "name": "restore-demo-clone-him1"
+      },
+      "spec": {
+        "cluster_reference": {
+          "kind": "cluster",
+          "name": "DEMO-AHV",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff"
+        },
+        "description": "OST",
+        "resources": {
+          "num_threads_per_core": 1,
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "serial_port_list": [],
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "212fcbbe-5e7a-4492-ba7e-3d17a4758bab",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.142",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:6a:c4:9a",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            },
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "e07c88f9-911b-4df4-a144-6b44682576ca",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.139",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:24:d5:82",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 2,
+          "gpu_list": [],
+          "memory_size_mib": 4096,
+          "power_state": "OFF",
+          "hardware_clock_timezone": "America/New_York",
+          "power_state_mechanism": {},
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 2,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "fb351a92-a4c4-4a2b-a09b-ca57abea3f2d",
+              "disk_size_bytes": 21474836480,
+              "disk_size_mib": 20480
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 3,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "c5fd0b1f-84b6-4caf-ac00-9cc6b8a8d553",
+              "disk_size_bytes": 1073741824,
+              "disk_size_mib": 1024
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "d86fc238-d1e5-451a-aaab-75ab029e4ad5",
+              "disk_size_bytes": 42949672960,
+              "disk_size_mib": 40960
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "2703671f-521d-47a5-bca9-eacc0cf7e8a1"
+            }
+          ]
+        },
+        "name": "restore-demo-clone-him1"
+      },
+      "metadata": {
+        "last_update_time": "2019-06-13T03:33:50Z",
+        "kind": "vm",
+        "uuid": "ced042b4-3bd6-4155-8644-e5476d9de1c3",
+        "project_reference": {
+          "kind": "project",
+          "name": "default",
+          "uuid": "72acfcc2-f524-41f0-adb0-c142fa41defc"
+        },
+        "spec_version": 0,
+        "creation_time": "2019-06-13T03:33:50Z",
+        "owner_reference": {
+          "kind": "user",
+          "uuid": "00000000-0000-0000-0000-000000000000",
+          "name": "admin"
+        },
+        "categories": {}
+      }
+    },
+    {
+      "status": {
+        "state": "COMPLETE",
+        "cluster_reference": {
+          "kind": "cluster",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff",
+          "name": "DEMO-AHV"
+        },
+        "description": "OST",
+        "resources": {
+          "num_threads_per_core": 1,
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 2,
+          "gpu_list": [],
+          "protection_type": "UNPROTECTED",
+          "memory_size_mib": 4096,
+          "hardware_clock_timezone": "America/New_York",
+          "power_state_mechanism": {
+            "guest_transition_config": {}
+          },
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 3,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "59b24f79-4444-4514-8a07-f9bd7857802a",
+              "disk_size_bytes": 1073741824,
+              "disk_size_mib": 1024
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 2,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "51fe6f96-a895-4ac6-9896-cd0c811cb8e7",
+              "disk_size_bytes": 21474836480,
+              "disk_size_mib": 20480
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "a85eba47-aaf0-4a0a-9007-249471359d97",
+              "disk_size_bytes": 42949672960,
+              "disk_size_mib": 40960
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "8112c006-de56-4205-be26-dbbab5569a71"
+            }
+          ],
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "0623e678-2aac-4d95-8be5-c97a16d24c27",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.64",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:65:ba:2a",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            },
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "a30bd536-3f43-4dd9-9ed5-dc15142ea846",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.63",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:75:34:d5",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "serial_port_list": [],
+          "hypervisor_type": "AHV",
+          "power_state": "OFF"
+        },
+        "name": "restore-himhim-clone1"
+      },
+      "spec": {
+        "cluster_reference": {
+          "kind": "cluster",
+          "name": "DEMO-AHV",
+          "uuid": "00057fb1-0232-ce88-0000-0000000266ff"
+        },
+        "description": "OST",
+        "resources": {
+          "num_threads_per_core": 1,
+          "vnuma_config": {
+            "num_vnuma_nodes": 0
+          },
+          "serial_port_list": [],
+          "nic_list": [
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "0623e678-2aac-4d95-8be5-c97a16d24c27",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.64",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:65:ba:2a",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            },
+            {
+              "nic_type": "NORMAL_NIC",
+              "uuid": "a30bd536-3f43-4dd9-9ed5-dc15142ea846",
+              "ip_endpoint_list": [
+                {
+                  "ip": "10.42.220.63",
+                  "type": "ASSIGNED"
+                }
+              ],
+              "mac_address": "50:6b:8d:75:34:d5",
+              "subnet_reference": {
+                "kind": "subnet",
+                "name": "Demo VM Network",
+                "uuid": "dfc5b007-46b8-4546-a01e-cebba4ea644a"
+              },
+              "is_connected": true
+            }
+          ],
+          "num_vcpus_per_socket": 1,
+          "num_sockets": 2,
+          "gpu_list": [],
+          "memory_size_mib": 4096,
+          "power_state": "OFF",
+          "hardware_clock_timezone": "America/New_York",
+          "power_state_mechanism": {},
+          "vga_console_enabled": true,
+          "disk_list": [
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 3,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "59b24f79-4444-4514-8a07-f9bd7857802a",
+              "disk_size_bytes": 1073741824,
+              "disk_size_mib": 1024
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 2,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "51fe6f96-a895-4ac6-9896-cd0c811cb8e7",
+              "disk_size_bytes": 21474836480,
+              "disk_size_mib": 20480
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "SCSI"
+                },
+                "device_type": "DISK"
+              },
+              "uuid": "a85eba47-aaf0-4a0a-9007-249471359d97",
+              "disk_size_bytes": 42949672960,
+              "disk_size_mib": 40960
+            },
+            {
+              "device_properties": {
+                "disk_address": {
+                  "device_index": 0,
+                  "adapter_type": "IDE"
+                },
+                "device_type": "CDROM"
+              },
+              "uuid": "8112c006-de56-4205-be26-dbbab5569a71"
+            }
+          ]
+        },
+        "name": "restore-himhim-clone1"
+      },
+      "metadata": {
+        "last_update_time": "2019-06-13T08:51:51Z",
+        "kind": "vm",
+        "uuid": "2c2e9eba-952f-49d0-85c1-b88631bf5d69",
+        "project_reference": {
+          "kind": "project",
+          "name": "default",
+          "uuid": "72acfcc2-f524-41f0-adb0-c142fa41defc"
+        },
+        "spec_version": 0,
+        "creation_time": "2019-06-13T08:51:51Z",
+        "owner_reference": {
+          "kind": "user",
+          "uuid": "00000000-0000-0000-0000-000000000000",
+          "name": "admin"
+        },
+        "categories": {}
+      }
+    }
+  ]
+}
