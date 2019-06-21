@@ -83,6 +83,7 @@ def main():
                                 uuid = meta['uuid']
                                 name = spec['name']
                                 vml = vm(db,uuid,name)
+                                vml['teste'] = "teste"
                                 linkClusVm(db,cl,vml,"is Hosted in")
                                 if "project_reference" in meta:
                                     proj = meta['project_reference']
