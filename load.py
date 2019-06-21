@@ -17,7 +17,7 @@ def cluster(db,uuid,name):
                 return cl[0]
 
 
-def project(db,uuid,name,vml):
+def project(db,uuid,name):
                 lookup = Q("UUID", exact="%s" %uuid)
                 prjs = db.nodes.filter(lookup)
                 if len(prjs) < 1:
@@ -29,20 +29,40 @@ def project(db,uuid,name,vml):
                                 return prj
                 return prjs[0]
 
+def linkPrjVm(db,prj,vm,link):
+                lookup = Q("Name", exact="%s" %link)
+                rel = db.relationships.filter(lookup)
+                found = False
+                for e in rel:
+                    if e.start.id == vm.id:
+                        found = True
+                if not found:
+                    rel = vm.relationships.create(link, prj)
+                    rel['Name']=link
 
-def vm(db,uuid,name,uuidcluster):
+def linkClusVm(db,cluster,vm,link):
+                lookup = Q("Name", exact="%s" %link)
+                rel = db.relationships.filter(lookup)
+                found = False
+                for e in rel:
+                    if e.start.id == vm.id:
+                        found = True
+                if not found:
+                    rel = vm.relationships.create(link,cluster)
+                    rel['Name'] = link
+
+
+
+
+def vm(db,uuid,name):
                 lookup= Q("UUID", exact="%s" %uuid)
-                lookupcluster= Q("UUID", exact="%s" %uuidcluster)
                 vml = db.nodes.filter(lookup)
-                cl  =db.nodes.filter(lookupcluster)
-                print(cl[0])
                 if len(vml) < 1:
                                 lblvm = db.labels.create("VM")
                                 v = db.nodes.create()
                                 v['Name'] = name
                                 v['UUID'] = uuid
                                 lblvm.add(v)
-                                v.relationships.create("is Hosted in",cl[0])
                                 return v
                 return vml[0]
 
@@ -59,22 +79,21 @@ def main():
                                 spec = e['spec']
                                 clus = spec['cluster_reference']
                                 cl = cluster(db,clus['uuid'],clus['name'])
-                                print("Cluster")
-                                print(cl)
                                 meta = e['metadata']
                                 uuid = meta['uuid']
                                 name = spec['name']
-                                vml = vm(db,uuid,name,clus['uuid'])
-                                print(meta)
-                                print(meta['project_reference'])
-                                proj = meta['project_reference']
-                                projname = proj['name']
-                                projuuid = proj['uuid']
-                                prj = project(db,projuuid,projname,vml)
-                                uuid = meta['uuid']
-                                name = spec['name']
-                                vml = vm(db,uuid,name,clus['uuid'])
-                                vml.relationships.create("in a Project", prj)
+                                vml = vm(db,uuid,name)
+                                linkClusVm(db,cl,vml,"is Hosted in")
+                                if "project_reference" in meta:
+                                    proj = meta['project_reference']
+                                    projname = proj['name']
+                                    projuuid = proj['uuid']
+                                    prj = project(db,projuuid,projname)
+                                    uuid = meta['uuid']
+                                    name = spec['name']
+                                    linkPrjVm(db,prj,vml,"in a Project")
+
+
 
 
 
@@ -82,4 +101,3 @@ def main():
 
 if __name__ == "__main__":
                 main()
- 
