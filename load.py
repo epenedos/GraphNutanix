@@ -83,8 +83,8 @@ def main():
                                 uuid = meta['uuid']
                                 name = spec['name']
                                 vml = vm(db,uuid,name)
-                                vml['teste'] = "teste"
                                 linkClusVm(db,cl,vml,"is Hosted in")
+
                                 if "project_reference" in meta:
                                     proj = meta['project_reference']
                                     projname = proj['name']
@@ -94,7 +94,9 @@ def main():
                                     name = spec['name']
                                     linkPrjVm(db,prj,vml,"in a Project")
 
-
+                                if "categories" in meta:
+                                    for i in meta['categories']:
+                                        print(i)
 
 
 
